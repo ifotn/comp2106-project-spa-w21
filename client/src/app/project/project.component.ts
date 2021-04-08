@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // reference service that calls the server api
 import { ProjectService } from "../services/project.service";
+import {formatDate} from "@angular/common";
 
 @Component({
   selector: 'app-project',
@@ -64,7 +65,7 @@ export class ProjectComponent implements OnInit {
   selectProject(p: any) {
     this._id = p._id;
     this.name = p.name;
-    this.dueDate = p.dueDate;
+    this.dueDate = formatDate(p.dueDate, 'mediumDate', 'en-CA');
     this.course = p.course;
   }
 
