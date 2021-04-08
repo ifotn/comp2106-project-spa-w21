@@ -28,5 +28,17 @@ router.get('/', (req, res, next) => {
     })
 })
 
+// POST: /projects
+router.post('/', (req, res, next) => {
+    Project.create(req.body, (err, project) => {
+        if (err) {
+            return res.json(err).status(501)
+        }
+        else {
+            return res.json(project).status(201) // resource created
+        }
+    })
+})
+
 // make public
 module.exports = router

@@ -8,6 +8,7 @@ import { ProjectComponent } from './project/project.component';
 // add service & httpmodule
 import { ProjectService } from "./services/project.service";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms"; // needed for form data-binding for add / edit
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HttpClientModule } from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule
+    AppRoutingModule, HttpClientModule, FormsModule
   ],
   providers: [ProjectService],
   bootstrap: [ProjectComponent]

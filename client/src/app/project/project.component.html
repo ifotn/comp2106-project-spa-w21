@@ -1,14 +1,37 @@
 <h1>Project Tracker</h1>
 
-<table class="table table-striped table-hover">
-  <thead>
-  <th>Name</th>
-  <th>Due Date</th>
-  <th>Course</th>
-  </thead>
-  <tr *ngFor="let p of projects">
-    <td>{{p.name}}</td>
-    <td>{{p.dueDate}}</td>
-    <td>{{p.course}}</td>
-  </tr>
-</table>
+<div class="row">
+  <div class="col-8">
+    <table class="table table-striped table-hover">
+      <thead>
+        <th>Name</th>
+        <th>Due Date</th>
+        <th>Course</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of projects">
+          <td>{{p.name}}</td>
+          <td>{{p.dueDate | date}}</td>
+          <td>{{p.course}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-4">
+    <form>
+      <fieldset class="form-group">
+        <label for="name" class="col-3">Name:</label>
+        <input name="name" id="name" required [(ngModel)]="name" />
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="dueDate" class="col-3">Due Date:</label>
+        <input name="dueDate" id="dueDate" required type="date" [(ngModel)]="dueDate" />
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="course" class="col-3">Course:</label>
+        <input name="course" id="course" required [(ngModel)]="course" />
+      </fieldset>
+      <button class="offset-3 btn btn-primary" (click)="addProject()">Save</button>
+    </form>
+  </div>
+</div>

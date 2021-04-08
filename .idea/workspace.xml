@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e51edec2-2402-4f71-a041-8b8a9b862f61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/project/project.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/project/project.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/project/project.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/project/project.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/services/project.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/project.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/globals.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/projects.js" afterDir="false" />
     </list>
@@ -33,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/eval/2106/COMP2106AssignmentTwo-edituploads" />
     <property name="ts.external.directory.path" value="C:\Users\RFreeman\node\project-spa\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -52,11 +55,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617294345260</updated>
-      <workItem from="1617294347545" duration="7508000" />
+      <workItem from="1617294347545" duration="9084000" />
+      <workItem from="1617723849318" duration="16000" />
+      <workItem from="1617887530786" duration="4016000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1617723863633">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617723863633" />
   </component>
 </project>

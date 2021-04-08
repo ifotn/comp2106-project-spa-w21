@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 // get api server domain from config file
-//const config = import('../../../../config/globals')
+import { apiServer } from '../../../../config/globals'
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,11 @@ export class ProjectService {
 
   // get
   getProjects() {
-    return this.http.get('http://localhost:3000/projects')
+    return this.http.get(apiServer + '/projects')
+  }
+
+  // add new
+  addProject(newProject) {
+    return this.http.post(apiServer + '/projects', newProject)
   }
 }
