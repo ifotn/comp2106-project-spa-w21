@@ -10,9 +10,16 @@
       </thead>
       <tbody>
         <tr *ngFor="let p of projects">
-          <td>{{p.name}}</td>
+          <td>
+            <a (click)="selectProject(p)">
+              {{p.name}}
+            </a>
+          </td>
           <td>{{p.dueDate | date}}</td>
           <td>{{p.course}}</td>
+          <td>
+            <a class="btn btn-danger" (click)="deleteProject(p._id)">Delete</a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -25,13 +32,16 @@
       </fieldset>
       <fieldset class="form-group">
         <label for="dueDate" class="col-3">Due Date:</label>
-        <input name="dueDate" id="dueDate" required type="date" [(ngModel)]="dueDate" />
+        <input name="dueDate" id="dueDate" required [(ngModel)]="dueDate" />
       </fieldset>
       <fieldset class="form-group">
         <label for="course" class="col-3">Course:</label>
         <input name="course" id="course" required [(ngModel)]="course" />
       </fieldset>
-      <button class="offset-3 btn btn-primary" (click)="addProject()">Save</button>
+      <input type="hidden" name="_id" id="id" [(ngModel)]="_id" />
+      <button class="offset-3 btn btn-primary" (click)="addProject()" *ngIf="!_id">Save</button>
+      <button class="offset-3 btn btn-primary" (click)="updateProject()" *ngIf="_id">Save</button>
+      <button class="btn btn-primary" (click)="clearForm()">Reset</button>
     </form>
   </div>
 </div>

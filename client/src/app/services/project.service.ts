@@ -22,4 +22,14 @@ export class ProjectService {
   addProject(newProject) {
     return this.http.post(apiServer + '/projects', newProject)
   }
+
+  // delete
+  deleteProject(_id: any) {
+    return this.http.delete(apiServer + '/projects/' + _id)
+  }
+
+  // update
+  updateProject(project) {
+    return this.http.put(apiServer + '/projects/' + project._id, project)
+  }
 }
